@@ -1,5 +1,5 @@
 [workspace]
-members = [ 
+members = [ "common_concepts", 
     "guessing_game",
     "hello_world"
 ]

@@ -1,7 +1,7 @@
 ## Command to create a new repo without git
 
 ``` shell
-cargo new guessing_game --vsc none
+cargo new guessing_game --vcs none
 ```
 
 ## Command to to build the program 
