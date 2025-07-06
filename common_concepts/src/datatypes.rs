@@ -42,6 +42,8 @@ pub fn run() {
     let e: char = 'A'; // Character
     let f: () = (); // Unit type
 
+    println!("Integer: {}, Unsigned Integer: {}, Floating-point: {}, Boolean: {}, Character: {}, Unit type: {:?}", a, b, c, d, e, f);
+
 
     //Compound Types
     /*
