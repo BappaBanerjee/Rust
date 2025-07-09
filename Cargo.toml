@@ -2,5 +2,5 @@
 members = [ "common_concepts", 
     "guessing_game",
     "hello_world"
-, "ownership"]
+, "ownership", "struct_datatype"]
 resolver="3"
