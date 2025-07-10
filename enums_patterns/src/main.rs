@@ -1,6 +1,11 @@
+mod match_flow;
+mod concise_flow;
+
 fn main() {
     println!("Enums and Patterns in Rust!");
     enums_patters();
+    match_flow::match_flow();
+    concise_flow::run();
 }
 
 fn enums_patters() {
@@ -101,6 +106,7 @@ fn enums_patters() {
         Option::Some(index) => println!("Item found at index: {}", index),
         Option::None => println!("Item not found"), 
     }
+
 
 
 }
