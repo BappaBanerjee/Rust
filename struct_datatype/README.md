@@ -32,6 +32,13 @@ To use a struct after we’ve defined it, we create an instance of that struct b
 
 ### To get the specific value of the struct we use
 
+```rust
+println!("Username: {}", user1.username);
+```
+
+
+### change the value in the email field of a mutable User instance.
+
 ```rust 
     user1.email = String::from("anotheremail@example.com");
 ```
@@ -92,12 +99,12 @@ println!("{}", user1.email);
 
 ## Tuple struct
 
-    *  Tuple structs are a type of struct that uses a tuple to group multiple values together.
-    *   They are defined using the `struct` keyword followed by the name of the struct
-    *   and a tuple of values.
-    *   Tuple structs can be used to create a new type that is distinct from other types
-    *   even if the tuple has the same types as another tuple struct.
-    *   They are useful for creating simple data structures that do not require named fields.
+    -  Tuple structs are a type of struct that uses a tuple to group multiple values together.
+    -   They are defined using the `struct` keyword followed by the name of the struct
+    -   and a tuple of values.
+    -   Tuple structs can be used to create a new type that is distinct from other types
+    -   even if the tuple has the same types as another tuple struct.
+    -   They are useful for creating simple data structures that do not require named fields.
 
 ```rust
 
