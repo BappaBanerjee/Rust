@@ -1,6 +1,6 @@
 [workspace]
-members = [ "chap7_proj_structure", "common_concepts", "enums_patterns", 
+members = [ "chap7_proj_structure", "common_collection", "common_concepts", "enums_patterns", 
     "guessing_game",
     "hello_world"
-, "ownership", "struct_datatype"]
+, "ownership", "programs", "struct_datatype"]
 resolver="3"
