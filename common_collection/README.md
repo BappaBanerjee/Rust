@@ -109,3 +109,14 @@ Vectors can only store values that are of the same type. This can be inconvenien
 ```
 
 Rust needs to know what types will be in the vector at compile time so it knows exactly how much memory on the heap will be needed to store each element. We must also be explicit about what types are allowed in this vector. If Rust allowed a vector to hold any type, there would be a chance that one or more of the types would cause errors with the operations performed on the elements of the vector. Using an enum plus a match expression means that Rust will ensure at compile time that every possible case is handled
+
+
+## Filter method
+filter is an iterator adapter that lets you keep only the elements that match a condition.
+
+**syntax**
+
+```bash
+iterator.filter(|item| condition)
+```
+
