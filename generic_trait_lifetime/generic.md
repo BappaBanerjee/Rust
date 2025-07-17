@@ -67,3 +67,5 @@ impl Point<f32> {
     }
 }
 ```
+
+This code means the type Point<f32> will have a distance_from_origin method; other instances of Point<T> where T is not of type f32 will not have this method defined.

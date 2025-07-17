@@ -77,7 +77,7 @@ If we insert a key and a value into a hash map and then insert that same key wit
     println!("{scores:?}");
 ```
 
-The ``or_insert`` method on ``Entry`` is defined to return a mutable reference to the value for the corresponding Entry key if that key exists, and if not, it inserts the parameter as the new value for this key and returns a mutable reference to the new value. 
+The `or_insert` method on `Entry` is defined to return a mutable reference to the value for the corresponding Entry key if that key exists, and if not, it inserts the parameter as the new value for this key and returns a mutable reference to the new value.
 
 ### Updating a Value Based on the Old Value
 
@@ -100,4 +100,4 @@ Another common use case for hash maps is to look up a key’s value and then upd
 
 This code will print {"world": 2, "hello": 1, "wonderful": 1}.
 
-The split_whitespace method returns an iterator over subslices, separated by whitespace, of the value in text. The or_insert method returns a mutable reference (&mut V) to the value for the specified key. Here, we store that mutable reference in the count variable, so in order to assign to that value, we must first dereference count using the asterisk (*). The mutable reference goes out of scope at the end of the for loop, so all of these changes are safe and allowed by the borrowing rules.
+The split_whitespace method returns an iterator over subslices, separated by whitespace, of the value in text. The or_insert method returns a mutable reference (&mut V) to the value for the specified key. Here, we store that mutable reference in the count variable, so in order to assign to that value, we must first dereference count using the asterisk (\*). The mutable reference goes out of scope at the end of the for loop, so all of these changes are safe and allowed by the borrowing rules.
