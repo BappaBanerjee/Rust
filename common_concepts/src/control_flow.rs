@@ -1,7 +1,6 @@
-
 /*
-*   Unlike languages such as Ruby and JavaScript, 
-*   Rust will not automatically try to convert non-Boolean types to a Boolean. 
+*   Unlike languages such as Ruby and JavaScript,
+*   Rust will not automatically try to convert non-Boolean types to a Boolean.
 *   You must be explicit and always provide if with a Boolean as its condition.
 */
 
@@ -28,7 +27,6 @@ pub fn run() {
      *   The `for` loop allows you to iterate over a collection or a range of values.
      *   The `match` expression allows you to match a value against multiple patterns and execute code based on the match.
      */
-    
 }
 
 fn if_loop() {
@@ -135,4 +133,3 @@ fn match_example() {
         _ => println!("Value is something else"),
     }
 }
-

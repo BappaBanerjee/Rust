@@ -26,9 +26,8 @@ fn block_example() {
 
 fn error_example() {
     //uncomment the following line to see the error
-    // let x = (let y = 6); // This will cause a compile-time error because `let` cannot be used in an expression context  
+    // let x = (let y = 6); // This will cause a compile-time error because `let` cannot be used in an expression context
     // println!("This will not compile: {}", x);
-
 
     // The above line will not compile because `let` is used incorrectly.
     // The correct way to use `let` is to declare a variable, not as part of an expression.
@@ -47,5 +46,5 @@ fn error_example() {
     // This will compile successfully and print the value of x.
     // In summary, the original line will not compile because `let` is used incorrectly
     // in an expression context. The correct usage of `let` is to declare a variable
-    // and then use that variable in expressions. 
+    // and then use that variable in expressions.
 }

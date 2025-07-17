@@ -1,4 +1,3 @@
-
 pub fn match_flow() {
     // Enums in Rust
     // Enums are a powerful feature in Rust that allows you to define a type that can be one of several different variants.
@@ -21,8 +20,7 @@ pub fn match_flow() {
         Direction::Left => println!("Moving left!"),
         Direction::Right => println!("Moving right!"),
     }
-    
-    
+
     // Enums can also have associated data, allowing you to store additional information with each variant.
     let five = Some(5);
     let six = plus_one(five);
@@ -31,9 +29,8 @@ pub fn match_flow() {
     dice_game();
 }
 // This example demonstrates how to define an enum with multiple variants and use pattern matching to handle each variant.
-// Enums can also have associated data, allowing you to store additional information with each variant. 
+// Enums can also have associated data, allowing you to store additional information with each variant.
 // Here's an example of an enum with associated data:
-
 
 fn plus_one(x: Option<i32>) -> Option<i32> {
     match x {
@@ -43,7 +40,6 @@ fn plus_one(x: Option<i32>) -> Option<i32> {
 }
 
 fn dice_game() {
-
     let dice_roll = 9;
 
     match dice_roll {
@@ -51,4 +47,3 @@ fn dice_game() {
         _ => println!("Invalid roll!"),
     }
 }
-

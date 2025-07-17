@@ -1,7 +1,7 @@
-mod variables;
+mod control_flow;
 mod datatypes;
 mod functions;
-mod control_flow;
+mod variables;
 fn main() {
     variables::run();
     datatypes::run();

@@ -1,6 +1,6 @@
-use std::io;
 use rand::Rng; // Importing the Rng trait from the rand crate
 use std::cmp::Ordering;
+use std::io;
 
 fn main() {
     println!("Guess the number");
@@ -35,6 +35,4 @@ fn main() {
             }
         }
     }
-    
-    
 }

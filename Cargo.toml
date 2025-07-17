@@ -1,5 +1,5 @@
 [workspace]
-members = [ "chap7_proj_structure", "common_collection", "common_concepts", "enums_patterns", 
+members = [ "chap7_proj_structure", "common_collection", "common_concepts", "enums_patterns", "generic_trait_lifetime", 
     "guessing_game",
     "hello_world"
 , "ownership", "programs", "struct_datatype"]

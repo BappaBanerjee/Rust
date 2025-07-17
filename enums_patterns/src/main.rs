@@ -1,5 +1,5 @@
-mod match_flow;
 mod concise_flow;
+mod match_flow;
 
 fn main() {
     println!("Enums and Patterns in Rust!");
@@ -11,24 +11,24 @@ fn main() {
 fn enums_patters() {
     //enums
     /*
-    *   Enums are a powerful feature in Rust that allow you to define a type that can be one of several different variants.
-    *   Each variant can have its own data and behavior, making enums a versatile tool for modeling complex data structures.
-    *   Enums can be used to represent a wide range of concepts, from simple states to complex data structures.
-    *   They can also be used in pattern matching, allowing you to easily handle different cases based on the variant of the enum.
-    *   Enums can be defined with or without associated data, and they can also implement methods and traits.
-    *   Enums are often used in conjunction with pattern matching to handle different cases based on the variant of the enum.
-    *   This allows you to write concise and expressive code that is easy to read and maintain.
-    *   Enums can also be used to define custom error types
-    *   and can be combined with other Rust features like structs and traits to create powerful abstractions.
-    *   Overall, enums are a fundamental part of Rust's type system and provide a
-    *   flexible way to model complex data and behavior in your programs.
-    *   Enums can be used to represent a wide range of concepts, from simple states
-    *   to complex data structures. They can also be used in pattern matching, allowing you
-    *   to easily handle different cases based on the variant of the enum.
-    *   Enums can be defined with or without associated data, and they can also implement
-    *   methods and traits. Enums are often used in conjunction with pattern matching to handle
-    *   different cases based on the variant of the enum. This allows you to write concise
-    *   and expressive code that is easy to read and maintain.
+     *   Enums are a powerful feature in Rust that allow you to define a type that can be one of several different variants.
+     *   Each variant can have its own data and behavior, making enums a versatile tool for modeling complex data structures.
+     *   Enums can be used to represent a wide range of concepts, from simple states to complex data structures.
+     *   They can also be used in pattern matching, allowing you to easily handle different cases based on the variant of the enum.
+     *   Enums can be defined with or without associated data, and they can also implement methods and traits.
+     *   Enums are often used in conjunction with pattern matching to handle different cases based on the variant of the enum.
+     *   This allows you to write concise and expressive code that is easy to read and maintain.
+     *   Enums can also be used to define custom error types
+     *   and can be combined with other Rust features like structs and traits to create powerful abstractions.
+     *   Overall, enums are a fundamental part of Rust's type system and provide a
+     *   flexible way to model complex data and behavior in your programs.
+     *   Enums can be used to represent a wide range of concepts, from simple states
+     *   to complex data structures. They can also be used in pattern matching, allowing you
+     *   to easily handle different cases based on the variant of the enum.
+     *   Enums can be defined with or without associated data, and they can also implement
+     *   methods and traits. Enums are often used in conjunction with pattern matching to handle
+     *   different cases based on the variant of the enum. This allows you to write concise
+     *   and expressive code that is easy to read and maintain.
      */
 
     //enum with param
@@ -69,24 +69,24 @@ fn enums_patters() {
 
     // option enum
     /*
-    *   The `Option` enum is a powerful feature in Rust that allows you to represent a value that may or may not be present.
-    *   It is defined as `enum Option<T> { Some(T), None }`,
-    *   where `T` is a type parameter that can be any type.
-    *   The `Some` variant contains a value of type `T`, while the `None` variant represents the absence of a value.
-    *   This is particularly useful for handling cases
-    *   where a value may be optional or when dealing with operations that can fail.
-    *   The `Option` enum is commonly used in Rust to handle situations where a value
-    *   may not be available, such as when searching for an item in a collection or
-    *   when a function may not return a value.
-    *   It provides a safe way to handle the absence of a value without resorting to
-    *   null pointers or other unsafe practices that can lead to runtime errors.
-    *   The `Option` enum is a powerful tool for writing safe and expressive code in
-    *   Rust, allowing you to handle optional values in a type-safe manner.
-    *   It is often used in conjunction with pattern matching to handle the presence or absence of
-    *   a value in a concise and readable way.
+     *   The `Option` enum is a powerful feature in Rust that allows you to represent a value that may or may not be present.
+     *   It is defined as `enum Option<T> { Some(T), None }`,
+     *   where `T` is a type parameter that can be any type.
+     *   The `Some` variant contains a value of type `T`, while the `None` variant represents the absence of a value.
+     *   This is particularly useful for handling cases
+     *   where a value may be optional or when dealing with operations that can fail.
+     *   The `Option` enum is commonly used in Rust to handle situations where a value
+     *   may not be available, such as when searching for an item in a collection or
+     *   when a function may not return a value.
+     *   It provides a safe way to handle the absence of a value without resorting to
+     *   null pointers or other unsafe practices that can lead to runtime errors.
+     *   The `Option` enum is a powerful tool for writing safe and expressive code in
+     *   Rust, allowing you to handle optional values in a type-safe manner.
+     *   It is often used in conjunction with pattern matching to handle the presence or absence of
+     *   a value in a concise and readable way.
      */
 
-     enum Option<T> {
+    enum Option<T> {
         None,
         Some(T),
     }
@@ -104,10 +104,6 @@ fn enums_patters() {
     let item_to_find = 3;
     match find_item(&items, item_to_find) {
         Option::Some(index) => println!("Item found at index: {}", index),
-        Option::None => println!("Item not found"), 
+        Option::None => println!("Item not found"),
     }
-
-
-
 }
-

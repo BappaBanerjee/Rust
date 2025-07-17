@@ -7,8 +7,8 @@ struct User {
 }
 
 struct Rectangle {
-    width : u32,
-    length : u32
+    width: u32,
+    length: u32,
 }
 
 impl Rectangle {
@@ -18,14 +18,12 @@ impl Rectangle {
     }
 }
 
-
 fn main() {
     struct_example();
-    
 
     let rectangle = Rectangle {
-        width : 5,
-        length : 10
+        width: 5,
+        length: 10,
     };
 
     // Using the function to calculate area
@@ -38,15 +36,11 @@ fn main() {
     println!("area using method is {area_method}");
 }
 
-
-fn calculate_area(rectangle : &Rectangle) -> u32 {
+fn calculate_area(rectangle: &Rectangle) -> u32 {
     rectangle.length * rectangle.width
 }
 
-
-
 fn struct_example() {
-   
     let user1 = User {
         active: true,
         username: String::from("someusername123"),
@@ -64,17 +58,15 @@ fn struct_example() {
     // println!("user1 is {user1:?}");
     //tuple struct
     /*
-    *   Tuple structs are a type of struct that uses a tuple to group multiple values together.
-    *   They are defined using the `struct` keyword followed by the name of the struct
-    *   and a tuple of values.
-    *   Tuple structs can be used to create a new type that is distinct from other types
-    *   even if the tuple has the same types as another tuple struct.
-    *   They are useful for creating simple data structures that do not require named fields.
-    *  Example:  
+     *   Tuple structs are a type of struct that uses a tuple to group multiple values together.
+     *   They are defined using the `struct` keyword followed by the name of the struct
+     *   and a tuple of values.
+     *   Tuple structs can be used to create a new type that is distinct from other types
+     *   even if the tuple has the same types as another tuple struct.
+     *   They are useful for creating simple data structures that do not require named fields.
+     *  Example:
      */
     struct Color(i32, i32, i32);
-    let black = Color(0, 0, 0); 
+    let black = Color(0, 0, 0);
     println!("Black color: ({}, {}, {})", black.0, black.1, black.2);
-
 }
-

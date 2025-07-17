@@ -48,7 +48,7 @@ fn string_example() {
     s.push_str("bar");
 
     // Adding one character to a String value using push
-     let mut s = String::from("lo");
+    let mut s = String::from("lo");
     s.push('l');
 
     //Using the + operator to combine two String values into a new String value
@@ -56,8 +56,7 @@ fn string_example() {
     let s2 = String::from("world!");
     let s3 = s1 + &s2; // note s1 has been moved here and can no longer be used
 
-
-    //The format! macro works like println!, but instead of printing the output to the screen, 
+    //The format! macro works like println!, but instead of printing the output to the screen,
     //it returns a String with the contents.
     let s1 = String::from("tic");
     let s2 = String::from("tac");
@@ -66,20 +65,16 @@ fn string_example() {
     let s = format!("{s1}-{s2}-{s3}");
 
     /* NOTE */
-    // Indexing into Strings in rust is not allowed because string are stored in Unicode scalar value 
+    // Indexing into Strings in rust is not allowed because string are stored in Unicode scalar value
     //which take 2 bytes of space for each characters
-
-
-
-
 }
 
 fn vector_example() {
     //defining a vector
-    let vec1 : Vec<i32> = Vec::new();
+    let vec1: Vec<i32> = Vec::new();
 
     //defining and initializing
-    let mut vec2 = vec![10,20,30];
+    let mut vec2 = vec![10, 20, 30];
 
     //pushing data in vector
     vec2.push(40);
@@ -91,7 +86,7 @@ fn vector_example() {
     match third {
         Some(third) => {
             println!("gotch {third}")
-        },
+        }
         None => {
             println!("oops")
         }
@@ -101,15 +96,14 @@ fn vector_example() {
     let third: &i32 = &vec2[2];
     println!("The third element is {third}");
 
-
     //vector iteration : immutable
     for i in &vec2 {
         println!("element is {i}");
     }
 
     //mutable vector change
-    for i in &mut vec2{
-            *i += 50;
+    for i in &mut vec2 {
+        *i += 50;
     }
 
     println!("{vec2:?}");
@@ -119,13 +113,13 @@ fn vector_example() {
     enum SphreadSheetCell {
         Int(i32),
         Float(f64),
-        Text(String)
+        Text(String),
     }
 
-    let cell : Vec<SphreadSheetCell> = vec![
+    let cell: Vec<SphreadSheetCell> = vec![
         SphreadSheetCell::Int(3),
         SphreadSheetCell::Float(54.50),
-        SphreadSheetCell::Text(String::from("Rusty"))
+        SphreadSheetCell::Text(String::from("Rusty")),
     ];
 
     println!("{cell:?}");
